@@ -22,6 +22,7 @@ else
 {
 		//Destroy the rock
         instance_destroy();
+		audio_play_sound(snd_rockdestroy, 0, false, 1, 0, random_range(0.4, 1.1))
 		
 }
 

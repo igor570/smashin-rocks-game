@@ -21,6 +21,8 @@ if keyboard_check(vk_down)
 if mouse_check_button_pressed(mb_left) 
 {
 	instance_create_layer(x, y, "Instances", obj_bullet)
+	//Plays the shooting sound, but also randomizes the pitch!)
+	audio_play_sound(snd_shoot, 0, false, 1, 0, random_range(0.8, 1.2))
 }
 
 
